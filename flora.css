@@ -38,13 +38,17 @@
   src: url("./flora/OperatorMono-Book.woff");
 }
 @font-face {
-  font-family: YueHeiXiTi;
-  src: url("./flora/ZaoZiGongFangYueHeiXiTi-1.otf");
+  font-family: 上首方圆体;
+  src: url("./flora/上首方圆体.woff");
+}
+@font-face {
+  font-family: Source Han Sans;
+  src: url("./flora/SourceHanSans-Normal.woff");
 }
 
 html,
 body {
-  font-family: "Operator Mono", "Source Han Sans Normal";
+  font-family: "Operator Mono", "Source Han Sans";
 }
 
 body {
@@ -136,7 +140,7 @@ th {
 #write h5,
 #write h6 {
   width: auto;
-  font-family: "Operator Mono", "YueHeiXiTi", "Source Han Sans Normal";
+  font-family: "Operator Mono", "上首方圆体", "Source Han Sans";
 }
 
 #write p,
@@ -639,7 +643,7 @@ th {
 /* 侧边栏 */
 #typora-sidebar {
   border-right: 1px solid #19191c;
-  font-family: "Operator Mono", "YueHeiXiTi", "Source Han Sans Normal";
+  font-family: "Operator Mono", "上首方圆体", "Source Han Sans";
 }
 #typora-sidebar .sidebar-tabs {
   border-bottom: 1px solid #19191c;
@@ -934,7 +938,7 @@ footer.ty-footer {
 
 /* basic */
 .cm-s-inner {
-  font-family: "Operator Mono", "Source Han Sans Normal";
+  font-family: "Operator Mono", "Source Han Sans";
   font-size: 1rem;
   color: #abb2bf;
   background-color: #282c34;
