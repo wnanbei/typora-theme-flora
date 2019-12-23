@@ -5,7 +5,13 @@ This is a theme based on `Ursine`: [https://github.com/aCluelessDanny/typora-the
 
 ## Preview
 
+### Main Page:
 
+![Preview1.png](Preview1.png)
+
+### Table and Code 
+
+![Preview2.png](Preview2.png)
 
 ## Installation
 
