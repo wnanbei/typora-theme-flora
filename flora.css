@@ -4,7 +4,7 @@
   --text-color: #333;
   --md-char-color: #b4b4b4;
   --meta-content-color: #757575;
-  --table-border-color: #b4b4b4;
+  --table-border-color: white;
   --primary-color: #db4d52;
   --primary-btn-border-color: #be2f34;
   --primary-btn-text-color: #333;
@@ -96,6 +96,7 @@ blockquote::before {
 /* 小代码块 */
 code {
   font-size: 1rem;
+  font-family: "Operator Mono", "Source Han Sans";
   color: #d60000;
   border-radius: 0.25rem;
   padding: 0.1rem 0.3rem;
@@ -113,13 +114,49 @@ hr {
   border-color: #b4b4b4;
 }
 
+/* 表格样式 */
+table thead,
+table tr {
+  border-top-width: 0;
+  border-top-style: solid;
+  border-top-color: rgba(238, 211, 210, 0.5);
+}
 table {
-  border: 1px solid #b4b4b4;
-  margin: 1rem 0;
+  border-bottom-width: 0;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(238, 211, 210, 0.5);
 }
 
-table tr:nth-child(2n) {
-  background: #d0d0d0;
+/* Padding and font style */
+table td,
+table th {
+  border-style: none;
+  padding: 10px 15px;
+  color: rgb(177, 106, 104);
+}
+
+/* Alternating background colors */
+table th,
+table tr:nth-child(even) {
+  background: rgba(238, 211, 210, 0.5);
+}
+table tr:nth-child(odd) {
+  background: #fff;
+}
+
+/* 设置表格圆角 */
+table th:first-child{
+  border-radius: 6px 0 0 0;
+}
+table th:last-child{
+  border-radius: 0 6px 0 0;
+}
+table tr:last-child td:first-child{
+  border-radius: 0 0 0 6px;
+}
+table tr:last-child td:last-child{
+  border-radius: 0 0 6px 0;
 }
 
 thead {
@@ -139,8 +176,7 @@ th {
 #write h4,
 #write h5,
 #write h6 {
-  width: auto;
-  font-family: "Operator Mono", "上首方圆体", "Source Han Sans";
+  font-family: "上首方圆体", "Source Han Sans";
 }
 
 #write p,
@@ -153,37 +189,33 @@ th {
   font-size: 3rem;
   margin: 3rem 0;
   text-align: center;
-  margin-left: -4rem;
 }
 #write h2 {
   font-size: 2.2rem;
   margin: 4rem 0 2rem 0;
   text-align: center;
-  margin-left: -3rem;
 }
 #write h3 {
   font-size: 1.6rem;
   margin: 2.2rem 0 1rem 0;
 }
 #write h4 {
-  font-size: 1.2rem;
-  margin: 0.2rem 0;
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0 0;
 }
 #write h5,
 #write h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 /* 标题前显示标题级别 */
-#write h1::before,
-#write h2::before,
 #write h3::before,
 #write h4::before,
 #write h5::before,
 #write h6::before {
   position: absolute;
-  right: calc(100% + 10px);
+  right: -1.5rem;
   bottom: 0;
   color: #b4b4b4;
   font-size: 1rem;
@@ -196,32 +228,22 @@ th {
   padding: 0;
   vertical-align: baseline;
   line-height: 20px;
-}
-#write h1::before {
-  content: "H1";
-  bottom: 0.45rem;
-}
-#write h2::before {
-  content: "H2";
-  bottom: 0.2rem;
+  left: -1.5625rem;
+  top: 0.375rem;
+  vertical-align: middle;
+  display: inline-block;
 }
 #write h3::before {
   content: "H3";
-  bottom: 0.18rem;
 }
 #write h4::before {
   content: "H4";
-  bottom: 0.15rem;
 }
 #write h5::before {
   content: "H5";
 }
 #write h6::before {
   content: "H6";
-}
-#write h5::before,
-#write h6::before {
-  bottom: 0.1rem;
 }
 
 /* 列表样式 */
@@ -308,7 +330,7 @@ th {
 }
 
 #write .md-table-edit {
-  border-top: 1px solid #b4b4b4;
+  border-top: 1px solid;
   margin-top: -29px !important;
   padding: 3px 0;
 }
@@ -342,7 +364,7 @@ th {
 #write .typora-table-drag-area::after {
   content: "";
   position: absolute;
-  border: 2px solid #333;
+  border: 2px solid;
   opacity: 0;
   transition: opacity 0.4s;
 }
@@ -1100,7 +1122,7 @@ footer.ty-footer {
   margin: 8px auto;
   color: rgba(233, 237, 237, 1);
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .CodeMirror div.CodeMirror-cursor {
   border-left: 1px solid #e4629a;
@@ -1115,7 +1137,7 @@ footer.ty-footer {
   top: calc(100% - 1px);
   background: rgb(46, 50, 53);
   border: 1px solid #d0d0d0;
-  border-radius: 7px;
+  border-radius: 6px;
   border-top: 0;
   color: #abb2bf;
 }
@@ -1132,20 +1154,16 @@ footer.ty-footer {
 #fences-auto-suggest .active {
   background: #d0d0d0;
   color: #abb2bf;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .auto-suggest-container {
   background: rgb(40, 44, 52);
   color: #abb2bf;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .auto-suggest-container .autoComplt-hint.active {
   background: rgb(40, 44, 52);
   color: #abb2bf;
-}
-
-table tr:nth-child(2n) {
-  background: #e6e6e6;
 }
 
 sup.md-footnote {
