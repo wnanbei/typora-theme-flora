@@ -1118,11 +1118,14 @@ footer.ty-footer {
 /* 代码框 */
 .md-fences {
   background-color: rgb(46, 50, 53);
-  padding: 0.7rem 1rem;
-  margin: 8px auto;
+  padding: 0.7rem 0;
+  margin: 8px 10px 18px 5px;
   color: rgba(233, 237, 237, 1);
   border: none;
   border-radius: 6px;
+}
+.CodeMirror{
+  padding: 0 10px;
 }
 .CodeMirror div.CodeMirror-cursor {
   border-left: 1px solid #e4629a;
