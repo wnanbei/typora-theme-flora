@@ -965,6 +965,9 @@ footer.ty-footer {
   color: #abb2bf;
   background-color: #282c34;
 }
+.cm-s-inner span.cm-variable-2 {
+  color: #01a0e4;
+}
 .cm-s-inner .CodeMirror-selected {
   background-color: #3e4451;
 }
