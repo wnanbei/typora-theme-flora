@@ -5,11 +5,11 @@ This is a theme based on `Ursine`: [https://github.com/aCluelessDanny/typora-the
 
 ## Preview
 
-### English
+### English Preview
 
 ![英文.png](英文.png)
 
-### Chinese
+### Chinese Preview
 
 ![中文上首方圆体.png](中文上首方圆体.png)
 

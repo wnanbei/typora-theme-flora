@@ -43,7 +43,7 @@
 }
 @font-face {
   font-family: Source Han Sans;
-  src: url("./flora/SourceHanSans-Normal.woff");
+  src: url("./flora/SourceHanSans-Normal.ttc");
 }
 
 html,
