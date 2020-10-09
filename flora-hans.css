@@ -49,12 +49,10 @@
 html,
 body {
   font-family: "Operator Mono", "Source Han Sans";
-  /* background-color: #181a1b; */
 }
 
 body {
   font-size: 1.2rem;
-  /* color:rgb(240, 240, 240); */
 }
 
 h1,
@@ -120,11 +118,7 @@ hr {
 table thead,
 table tr {
   border-top-width: 0;
-  /* border-top-width: 5px; */
-  /* border-right-color: #e06c75; */
-  
   border-top-style: solid;
-  /* border-top-color: rgba(238, 211, 210, 0.5); */
   color: rgb(177, 106, 104);
 }
 table {
@@ -142,12 +136,6 @@ table th {
   border-top: none;
   border-bottom: none;
   border-width: 2px;
-  /* border-style: none; */
-  /* border-style: none,solid,none,solid; */
-  /* border-left: #01a0e4;
-  border-right: #01a0e4;
-  border-left-width: 2px;
-  border-right-width: 2px; */
   padding: 10px 15px;
   color: rgb(177, 106, 104);
 }
@@ -157,7 +145,6 @@ table th{
   background: rgba(255, 198, 198, 0.747);
 }
 table tr:nth-child(even) {
-  /* background: rgba(238, 211, 210, 0.5); */
   background: rgba(255, 221, 221, 0.747);
 }
 table tr:nth-child(odd) {
@@ -186,7 +173,6 @@ td,
 th {
   padding: 0.35rem 0.7rem;
   border: 1px solid #b4b4b4;
-  /* border: 1px solid #757575; */
 }
 
 /* 各级标题设置 */
@@ -235,7 +221,7 @@ th {
 #write h5::before,
 #write h6::before {
   position: absolute;
-  right: -1.5rem;
+  left: -1.5rem;
   bottom: 0;
   color: #b4b4b4;
   font-size: 1rem;
@@ -243,7 +229,7 @@ th {
   font-variant: "small-caps";
   border: 0;
   border-radius: 0;
-  left: auto;
+  right: auto;
   float: none;
   padding: 0;
   vertical-align: baseline;
@@ -296,7 +282,6 @@ th {
   position: absolute;
   border: 1px solid #b4b4b4;
   border-radius: 0.25rem;
-  /* margin-top: 0.1rem; */
   margin-top: 0.31rem;
   margin-left: -1.8rem;
   height: 1.2rem;
@@ -1180,7 +1165,7 @@ footer.ty-footer {
   bottom: initial;
   top: calc(100% - 0px);
   background: rgb(46, 50, 53);
-  border: 1px solid #d0d0d0;
+  border: 1px solid  rgb(46, 50, 53);
   border-radius: 6px;
   border-top: 0;
   color: #abb2bf;

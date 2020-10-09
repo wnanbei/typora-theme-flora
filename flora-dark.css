@@ -224,7 +224,7 @@ th {
 #write h5::before,
 #write h6::before {
   position: absolute;
-  right: -1.5rem;
+  left: -1.5rem;
   bottom: 0;
   color: #b4b4b4;
   font-size: 1rem;
@@ -232,7 +232,7 @@ th {
   font-variant: "small-caps";
   border: 0;
   border-radius: 0;
-  left: auto;
+  right: auto;
   float: none;
   padding: 0;
   vertical-align: baseline;
