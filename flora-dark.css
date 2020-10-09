@@ -1,6 +1,6 @@
 /* 主题基础样式 */
 :root {
-  --bg-color: #fbfbfb;
+  --bg-color: rgb(46, 50, 53);
   --text-color: #333;
   --md-char-color: #b4b4b4;
   --meta-content-color: #757575;
@@ -49,6 +49,8 @@
 html,
 body {
   font-family: "Operator Mono", "Source Han Sans";
+  background-color: #181a1b;
+  color:#abc0d0;
 }
 
 body {
@@ -75,8 +77,9 @@ del {
 
 mark {
   padding: 2px 1px;
-  background: #d3ffa4;
-  color: inherit;
+  background: rgb(175, 175, 0);
+  border-radius: 2px;
+  color: #282c34;
 }
 
 blockquote {
@@ -97,17 +100,18 @@ blockquote::before {
 code {
   font-size: 1.2rem;
   font-family: "Operator Mono", "Source Han Sans";
-  color: #d60000;
+  color: #e96900;
   border-radius: 0.25rem;
   padding: 0.1rem 0.3rem;
 }
 code:hover {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #eeeeee;
+  /* color: #eeeeee; */
+  color:#181a1b;
   border-radius: 0.25rem;
   padding: 0.1rem 0.3rem;
-  background: #d60000;
+  background: #e96900;
 }
 
 hr {
@@ -122,7 +126,6 @@ table tr {
   color: rgb(177, 106, 104);
 }
 table {
-  
   border-bottom-width: 0;
   border-radius: 10px;
   border-bottom-style: solid;
@@ -132,23 +135,23 @@ table {
 /* Padding and font style */
 table td,
 table th {
-  border-color: #fbfbfb;
+  border-color: #181a1b;
   border-top: none;
   border-bottom: none;
   border-width: 2px;
   padding: 10px 15px;
-  color: rgb(177, 106, 104);
+  color: #abc0d0;
 }
 
 /* Alternating background colors */
 table th{
-  background: rgba(255, 198, 198, 0.747);
+  background: rgb(34, 38, 41);
 }
 table tr:nth-child(even) {
-  background: rgba(255, 221, 221, 0.747);
+  background-color: rgb(46, 50, 53);
 }
 table tr:nth-child(odd) {
-  background: #fff;
+  background:  #181a1b;
 }
 
 /* 设置表格圆角 */
@@ -264,7 +267,7 @@ th {
 }
 #write ol > li > *,
 #write ul > li > * {
-  color: #333;
+  color:#abc0d0;
 }
 #write ol > li > *:not(ol):not(ul),
 #write ul > li > *:not(ol):not(ul) {
@@ -280,13 +283,14 @@ th {
   -webkit-appearance: initial;
   display: block;
   position: absolute;
-  border: 1px solid #b4b4b4;
+  border: 1px solid #db4d52;
   border-radius: 0.25rem;
   margin-top: 0.31rem;
   margin-left: -1.8rem;
   height: 1.2rem;
   width: 1.2rem;
   transition: background 0.3s;
+  background-color: #181a1b;
 }
 
 #write .md-task-list-item > input:focus {
@@ -306,7 +310,7 @@ th {
   height: 60%;
   width: 2px;
   transform: rotate(40deg);
-  background: #333;
+  background: #ffffff;
 }
 
 #write .md-task-list-item > input[checked]::after {
@@ -317,7 +321,7 @@ th {
   height: 30%;
   width: 2px;
   transform: rotate(-40deg);
-  background: #333;
+  background:#ffffff;
 }
 
 #write .md-task-list-item > p {
@@ -325,7 +329,7 @@ th {
 }
 
 #write .md-task-list-item.task-list-done > p {
-  color: #b4b4b4;
+  color: #999;
   text-decoration: line-through;
 }
 
@@ -419,7 +423,6 @@ th {
 
 #write .md-footnote {
   font-size: 0.8em;
-  /* font-size: 1.5em; */
   border: 1px solid #d0d0d0;
   padding: 0 4px;
   background: #f0f0f0;
@@ -732,7 +735,7 @@ th {
   transition: background 0.3s;
 }
 #typora-sidebar * {
-  color: #f0f0f0;
+  color: #abc0d0;
 }
 #typora-sidebar * .file-tree-rename-input {
   color: #333;
@@ -920,7 +923,7 @@ footer.ty-footer {
 .ty-preferences select,
 .ty-preferences ul.dropdown-menu {
   border-color: #9292928f;
-  background: #fbfbfb;
+  background:rgb(46, 50, 53);
 }
 
 .ty-preferences ul.dropdown-menu li {
@@ -1163,9 +1166,9 @@ footer.ty-footer {
 /* 代码框语言选择框 */
 #write .code-tooltip {
   bottom: initial;
-  top: calc(100% - 0px);
+  top: calc(100% + 2px);
   background: rgb(46, 50, 53);
-  border: 1px solid  rgb(46, 50, 53);
+  border: 1px solid rgb(46, 50, 53);
   border-radius: 6px;
   border-top: 0;
   color: #abb2bf;

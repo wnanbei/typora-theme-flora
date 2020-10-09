@@ -3,7 +3,7 @@ A theme that looks as beautiful as flora.
 
 This is a theme based on `Ursine`: [https://github.com/aCluelessDanny/typora-theme-ursine](https://github.com/aCluelessDanny/typora-theme-ursine)
 
-## Preview
+## Light Preview
 
 ### English Preview
 
@@ -18,6 +18,16 @@ Because of some people don`t like the font of headers. So I provide a version wh
 由于有部分朋友不太喜欢我在标题上使用的字体，所以也提供了标题使用思源黑体的版本。
 
 ![中文思源.png](中文思源.png)
+
+## Dark Preview
+
+### English Preview
+
+![QQ截图20201009002356](https://i.loli.net/2020/10/09/m7jzsXURanhP6xg.png)
+
+### Chinese Preview
+
+![QQ截图20201009003225](https://i.loli.net/2020/10/09/PGcAu6ZtMTNeLjm.png)
 
 ## Installation
 
