@@ -185,6 +185,15 @@ th {
   font-family: "Source Han Sans";
 }
 
+#write h1>span,
+#write h2>span,
+#write h3>span,
+#write h4>span,
+#write h5>span,
+#write h6>span {
+  position: relative;
+}
+
 #write p,
 #write pre {
   width: auto;
