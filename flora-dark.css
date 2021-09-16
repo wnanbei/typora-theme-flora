@@ -67,6 +67,16 @@ p {
   margin: 0.5rem 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p>span {
+  position: relative;
+}
+
 a {
   color: #db4d52;
 }
