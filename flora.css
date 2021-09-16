@@ -65,16 +65,6 @@ p {
   margin: 0.5rem 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p>span {
-  position: relative;
-}
-
 a {
   color: #db4d52;
 }
@@ -187,6 +177,15 @@ th {
 #write h5,
 #write h6 {
   font-family: "上首方圆体", "Source Han Sans";
+}
+
+#write h1>span,
+#write h2>span,
+#write h3>span,
+#write h4>span,
+#write h5>span,
+#write h6>span {
+  position: relative;
 }
 
 #write p,
