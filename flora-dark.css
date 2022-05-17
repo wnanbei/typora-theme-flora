@@ -715,13 +715,6 @@ th {
 #typora-sidebar #outline-content {
   line-height: 1.4em;
 }
-#typora-sidebar #outline-content .outline-h1 > .outline-item,
-#typora-sidebar .outline-title-wrapper,
-#typora-sidebar .outline-item-wrapper.outline-h1 > .outline-item,
-#typora-sidebar .file-library-node,
-#typora-sidebar .file-library-node .file-node-background {
-  transition: background 0.4s;
-}
 #typora-sidebar
   .file-tree-node.file-library-file-node:not(.active):hover
   .file-node-background,
@@ -747,7 +740,7 @@ th {
   color: #abc0d0;
 }
 #typora-sidebar * .file-tree-rename-input {
-  color: #333;
+  color: #abc0d0;
 }
 #typora-sidebar * code {
   background: #0000001a;
